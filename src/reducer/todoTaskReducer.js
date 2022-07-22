@@ -11,8 +11,13 @@ export const todoTaskReducer = (state, action) => {
 
             return [...state, {id:idFromDate, todotask}]
         };
-        case 'DELETE_TODO_TASK': {};
-        case 'CLEAR_TODO': {};
+        case 'DELETE_TODO_TASK': {
+            const idToFind = action.payload;
+            return state.filter(task => task.id !== idToFind)
+        };
+        case 'CLEAR_TODO': {
+            state = initialValueReducer;
+        };
         default: return state;
     }
 }

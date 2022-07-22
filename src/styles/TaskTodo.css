@@ -1,0 +1,26 @@
+.todo-task {
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    border-bottom: thin solid white;
+}
+
+.todo-task input {
+    margin: .5rem;
+}
+
+.unchecked {
+    color: #bbc4d2;
+    margin-right: .5rem;
+    transition: linear .5s;
+}
+
+.checked {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.todo-task button {
+    align-content: flex-end;
+}

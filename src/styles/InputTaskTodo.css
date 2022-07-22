@@ -1,0 +1,31 @@
+.inputs {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-input {
+    margin: 1.2rem 0;
+    padding: .2rem;
+    width: 80%;
+    border: none;
+    border-bottom: thin solid black;
+    background-color: transparent;
+    color: #bbc4d2;
+    
+}
+
+.todo-input:focus-visible {
+    outline: none;
+}
+
+.btn {
+    margin: 0 .5rem;
+    padding: .4rem 1rem;
+    background-color: #484F59;
+    border-radius: 5px;
+    border: none;
+    font-size: .7rem;
+    color: #bbc4d2;
+}
